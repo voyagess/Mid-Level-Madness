@@ -155,7 +155,7 @@ You can even jump forwards!
 ```javascript
 1.  = variable
 2.  + variable
-3.  j variable 0 5
+3.  j variable 1 5
 4.  < variable
 5.  : variable
 6.  // a
