@@ -1,0 +1,27 @@
+= A
+= B
+= Ainc
+= constA
++ B
+j B 1111 4
++ Ainc
++ constA
+j Ainc 1111 7
+
+// initiallise A as 6 and B as 8
+// and initiallise two increments 'Ainc' and 'Binc'
+
+- B
+
+
+- Ainc
++ A
+j Ainc 0 17
+
++ Ainc
+j Ainc constA 21
+
+
+j B 0 14
+
+< A

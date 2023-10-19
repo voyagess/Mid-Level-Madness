@@ -1,0 +1,35 @@
+= h
+= e
+= l
+= o
+= w
+= r
+= d
+= space
++ h
+j h 8 9
++ e
+j e 5 11
++ l
+j l 12 13
++ o
+j o 15 15
++ w
+j w 23 17
++ r
+j r 18 19
++ d
+j d 4 21
++ space
+j space 27 23
+: h
+: e
+: l
+: l
+: o
+: space
+: w
+: o
+: r
+: l
+: d

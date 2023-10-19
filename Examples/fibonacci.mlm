@@ -1,0 +1,36 @@
+// fibonacci sequence
+
+= x
+= y
+= z
+= number
+= constY
+
++ x
++ y
++ z
++ z
+
+< x
+
++ number
+j number 100 15
+
+// start of main fibonacci loop
++ x
+j x z 20
+
++ constY
+j constY y 23
+
++ z
+- y
+j y 0 26
+
++ y
+j y x 30
+
+< z
+- number
+j number 0 19
+
