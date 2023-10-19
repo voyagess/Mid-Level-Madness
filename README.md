@@ -73,7 +73,7 @@ If regular output is too boring for you, then you can use the character output o
 + variable
 + variable
 : variable
-// B
+// b
 ```
 
 You can use this to output any letter you like.
