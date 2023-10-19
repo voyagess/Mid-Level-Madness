@@ -14,14 +14,14 @@ When you initialize variables, they are always set to `0`. Don't worry though, y
 
 Always make sure you leave a space between your `=` and 'variable'!
 
-```java
+```javascript
 =variable 
 // error as you forgot whitespace  
 ```
 
 Unlike most programming languages, Mid-Level-Madness is simple. This is why in Mid-Level-Madness you can only increment a variable by `1` at a time. You can do this by using the `+` operator.
 
-```java
+```javascript
 = variable
 + variable
 // variable equals 1
@@ -29,7 +29,7 @@ Unlike most programming languages, Mid-Level-Madness is simple. This is why in M
 
 If you want your number to be even larger than `1`, you can chain these increments together to make this happen.
 
-```java
+```javascript
 = variable
 + variable
 + variable
@@ -38,7 +38,7 @@ If you want your number to be even larger than `1`, you can chain these incremen
 
 Once you've finished adding to your variable and you are now bored, you can start decrementing your variable by `1` using the `-` operator!
 
-```java
+```javascript
 = variable
 - variable
 - variable
@@ -48,7 +48,7 @@ Once you've finished adding to your variable and you are now bored, you can star
 
 Now, most of you are probably wondering how we can see the value of our variable once we've changed it. Well, you can do this by using the output operator `<`.
 
-```java
+```javascript
 = variable
 + variable
 + variable
@@ -58,7 +58,7 @@ Now, most of you are probably wondering how we can see the value of our variable
 
 It works for negative numbers too!
 
-```java
+```javascript
 = variable
 - variable
 - variable
@@ -68,7 +68,7 @@ It works for negative numbers too!
 
 If regular output is too boring for you, then you can use the character output operator `:`
 
-```java
+```javascript
 = variable
 + variable
 + variable
@@ -78,7 +78,7 @@ If regular output is too boring for you, then you can use the character output o
 
 You can use this to output any letter you like.
 
-```java
+```javascript
 = variable
 + variable
 + variable
@@ -112,7 +112,7 @@ You can use this to output any letter you like.
 
 If you want to save time typing all of that out, then you can use the 'jump if not' operator. 
 
-```java
+```javascript
 1.   = variable
 2.   + variable
 3.   j variable 26 2
@@ -128,7 +128,7 @@ You are probably confused, so let me explain how this works to you.
 
 If you want to print characters like ` ` and `\n` then you can just use the numbers 27 and 28 respectively
 
-```java
+```javascript
 1.  = variable
 2.  + variable
 3.  j variable 27 2
@@ -138,7 +138,7 @@ If you want to print characters like ` ` and `\n` then you can just use the numb
 
 You can also compare a variable to another variable in a jump statement.
 
-```java
+```javascript
 1.  = variable
 2.  = variable2
 3.  + variable2
@@ -152,7 +152,7 @@ You can also compare a variable to another variable in a jump statement.
 
 You can even jump forwards!
 
-```java
+```javascript
 1.  = variable
 2.  + variable
 3.  j variable 0 5
@@ -167,7 +167,7 @@ Now that you understand these few, simple commands, you can do anything you like
 
 If you want to write a comment, you don't need to have the `//`. Anything that isn't an MLM command will be interpreted as a comment.
 
-```java
+```javascript
 = variable
 + variable
 THIS IS A COMMENT
@@ -179,7 +179,7 @@ THIS IS ALSO A COMMENT
 
 You also can't use comments at the end of a statement like such:
 
-```java
+```javascript
 = variable
 + variable
 < variable  // 1
@@ -190,7 +190,7 @@ You also can't use comments at the end of a statement like such:
 
 ### Hello World!
 
-```java
+```javascript
 = h
 = e
 = l
@@ -231,7 +231,7 @@ j space 27 23
 
 ### Multiplication Program
 
-```java
+```javascript
 = A
 = B
 = Ainc
@@ -266,7 +266,7 @@ If you want to change the two values being multiplied, then just change the jump
 
 ### Fibonacci calculator
 
-```java
+```javascript
 = x
 = y
 = z
