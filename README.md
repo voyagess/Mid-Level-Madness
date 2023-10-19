@@ -110,16 +110,6 @@ You can use this to output any letter you like.
 // z
 ```
 
-If you want to print characters like ` ` and `\n` then you can just use the numbers 27 and 28 respectively
-
-```java
-= variable
-+ variable
-j variable 27 2
-: variable
-//  
-```
-
 If you want to save time typing all of that out, then you can use the 'jump if not' operator. 
 
 ```java
@@ -135,6 +125,16 @@ You are probably confused, so let me explain how this works to you.
 <br>The `variable` is whatever variable you are comparing to the number.
 <br>The `26` is the value that the variable is being compared to, in this case, it will jump if variable is not equal to 26.
 <br>The final part of the statement is the `2`. This simply states what line you want the program to jump to if the conditions match, in this case it is `2` but you can set it to anything you like.
+
+If you want to print characters like ` ` and `\n` then you can just use the numbers 27 and 28 respectively
+
+```java
+= variable
++ variable
+j variable 27 2
+: variable
+//  
+```
 
 You can also compare a variable to another variable in a jump statement.
 
