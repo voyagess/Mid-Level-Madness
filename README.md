@@ -6,7 +6,7 @@ An extremely small programming language that makes use of only 6 unique instruct
 
 We all love variables, and if you love variables as much as I do, you can initialize variables by using the following command:
 
-```java
+```javascript
 = variable
 ```
 
@@ -129,11 +129,11 @@ You are probably confused, so let me explain how this works to you.
 If you want to print characters like ` ` and `\n` then you can just use the numbers 27 and 28 respectively
 
 ```java
-= variable
-+ variable
-j variable 27 2
-: variable
-//  
+1.  = variable
+2.  + variable
+3.  j variable 27 2
+4.  : variable
+5.  //  
 ```
 
 You can also compare a variable to another variable in a jump statement.
