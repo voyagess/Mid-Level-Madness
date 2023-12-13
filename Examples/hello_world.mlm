@@ -1,0 +1,43 @@
+= h
+= e
+= l
+= o
+= w
+= r
+= d
+= space
+hinc:
++ h
+j h 8 hinc
+einc:
++ e
+j e 5 einc
+linc:
++ l
+j l 12 linc
+oinc:
++ o
+j o 15 oinc
+winc:
++ w
+j w 23 winc
+rinc:
++ r
+j r 18 rinc
+dink:
++ d
+j d 4 dink
+sink:
++ space
+j space 30 sink
+: h
+: e
+: l
+: l
+: o
+: space
+: w
+: o
+: r
+: l
+: d

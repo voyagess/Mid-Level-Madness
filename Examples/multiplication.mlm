@@ -1,0 +1,35 @@
+
+=A
+=B
+=Ainc
+=constA
+
+IncB:
++B
+j B 10 IncB
+
+IncA:
++Ainc
++constA
+j Ainc 12 IncA
+
+
+ForB:
+
+-B
+
+
+IncreaseA:
+-Ainc
++A
+j Ainc 0 IncreaseA
+
+
+ResetAinc:
++Ainc
+j Ainc constA ResetAinc
+
+
+j B 0 ForB
+
+< A
