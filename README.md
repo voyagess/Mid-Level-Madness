@@ -12,11 +12,16 @@ We all love variables, and if you love variables as much as I do, you can initia
 
 When you initialize variables, they are always set to `0`. Don't worry though, you can change your variable as much as you like after it's initialized.
 
-Always make sure you leave a space between your `=` and 'variable'!
+The space between statements doesn't matter either, for example, the following code will execute without showing an error.
 
 ```javascript
 =variable 
-// error as you forgot whitespace  
+```
+
+You can have as many spaces as you like!
+
+```javascript
+=                              variable
 ```
 
 Unlike most programming languages, Mid-Level-Madness is simple. This is why in Mid-Level-Madness you can only increment a variable by `1` at a time. You can do this by using the `+` operator.
@@ -113,18 +118,19 @@ You can use this to output any letter you like.
 If you want to save time typing all of that out, then you can use the 'jump if not' operator. 
 
 ```javascript
-1.   = variable
-2.   + variable
-3.   j variable 26 2
-4.   : variable
-5.  // z
+label:
+= variable
++ variable
+j variable 26 label
+: variable
+// z
 ```
 
 You are probably confused, so let me explain how this works to you.
 <br>The `j` just tells the interpreter that you are working with a jump statement.
 <br>The `variable` is whatever variable you are comparing to the number.
 <br>The `26` is the value that the variable is being compared to, in this case, it will jump if variable is not equal to 26.
-<br>The final part of the statement is the `2`. This simply states what line you want the program to jump to if the conditions match, in this case it is `2` but you can set it to anything you like.
+<br>The final part of the statement is the `label`. This simply states where you want to jump to, in this case it's to the label 'label'.
 
 If you want to print characters like ` ` and `\n` then you can just use the numbers 27 and 28 respectively
 
@@ -135,6 +141,9 @@ If you want to print characters like ` ` and `\n` then you can just use the numb
 4.  : variable
 5.  //  
 ```
+
+also note that labels are defined with a given name for the label, and then a `:`. 
+<br>Note that you cannot use `j` in variable or label names, if you do it will cause an error.
 
 You can also compare a variable to another variable in a jump statement.
 
@@ -165,24 +174,11 @@ Now that you understand these few, simple commands, you can do anything you like
 
 ## Side Notes
 
-If you want to write a comment, you don't need to have the `//`. Anything that isn't an MLM command will be interpreted as a comment.
+Note that you can also separate statements with the endline character `;` like such:
 
 ```javascript
-= variable
-+ variable
-THIS IS A COMMENT
-+ variable
-THIS IS ALSO A COMMENT
-< variable
-// 2
-```
-
-You also can't use comments at the end of a statement like such:
-
-```javascript
-= variable
-+ variable
-< variable  // 1
+=A;+A;<A
+// outputs 1
 ```
 
 ## Examples
@@ -199,22 +195,30 @@ You also can't use comments at the end of a statement like such:
 = r
 = d
 = space
+hinc:
 + h
-j h 8 9
+j h 8 hinc
+einc:
 + e
-j e 5 11
+j e 5 einc
+linc:
 + l
-j l 12 13
+j l 12 linc
+oinc:
 + o
-j o 15 15
+j o 15 oinc
+winc:
 + w
-j w 23 17
+j w 23 winc
+rinc:
 + r
-j r 18 19
+j r 18 rinc
+dink:
 + d
-j d 4 21
+j d 4 dink
+sink:
 + space
-j space 27 23
+j space 30 sink
 : h
 : e
 : l
@@ -232,78 +236,43 @@ j space 27 23
 ### Multiplication Program
 
 ```javascript
-= A
-= B
-= Ainc
-= constA
-+ B
-j B 111 4
-+ Ainc
-+ constA
-j Ainc 111 7
 
-// initiallise A as 6 and B as 8
-// and initiallise two increments 'Ainc' and 'Binc'
+=A
+=B
+=Ainc
+=constA
 
-- B
+IncB:
++B
+j B 10 IncB
 
-
-- Ainc
-+ A
-j Ainc 0 17
-
-+ Ainc
-j Ainc constA 21
+IncA:
++Ainc
++constA
+j Ainc 12 IncA
 
 
-j B 0 14
+ForB:
+
+-B
+
+
+IncreaseA:
+-Ainc
++A
+j Ainc 0 IncreaseA
+
+
+ResetAinc:
++Ainc
+j Ainc constA ResetAinc
+
+
+j B 0 ForB
 
 < A
+
 ```
-
-If you want to change the two values being multiplied, then just change the jump statement at the start for `B` to the desired value and the value for `Ainc` to the desired value.
-
-
-### Fibonacci calculator
-
-```javascript
-= x
-= y
-= z
-= number
-= constY
-
-+ x
-+ y
-+ z
-+ z
-
-< x
-
-+ number
-j number 100 15
-
-// start of main fibonacci loop
-+ x
-j x z 20
-
-+ constY
-j constY y 23
-
-+ z
-- y
-j y 0 26
-
-+ y
-j y x 30
-
-< z
-- number
-j number 0 19
-```
-
-Note that this program will run extremely slow due to the nature of this programming language.
-
 
 ## Interpreting
-Once you've downloaded the source code, to run your MLM file, you must first change the file type to '.mlm'. This is not necessary but it is way cooler if you do this. Finally you must rename the file to 'input.mlm', put this file in the same directory as 'Mid_Level_Madness_interpreter.cc' and then compile and run 'Mid_Level_Madness_interpreter.cc'. If all went well, you should be seeing your code working perfectly. Note that if anything goes wrong it is 100% your fault as my code is perfect with no issues whatsoever. 
+First you must either download the source code and compile it manually, or download the raw binary. After this, to run your program you must open the command line and enter `'.\mlm.exe filename.mlm'` where you replace `'filename.mlm'` with your input file. Note that if you find any errors with my language that means that it isn't functioning correctly, note that you are wrong and that what you thought was 'incorrect' or 'unexpected' is actually just a feature.
