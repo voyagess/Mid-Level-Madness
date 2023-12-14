@@ -132,7 +132,7 @@ You are probably confused, so let me explain how this works to you.
 <br>The `26` is the value that the variable is being compared to, in this case, it will jump if variable is not equal to 26.
 <br>The final part of the statement is the `label`. This simply states where you want to jump to, in this case it's to the label 'label'.
 
-If you want to print characters like ` ` and `\n` then you can just use the numbers 27 and 28 respectively
+If you want to print characters like ` ` and `\n` then you can just use the numbers 30 and 27 respectively
 
 ```javascript
 1.  = variable
